@@ -12,14 +12,14 @@ int* aye(int a[],int b[], int n, int k)
         {
             m++;
             if (b[j]<=a[i])
-                {c[m]=b[j];
+                {
+                c[m]=b[j];
                 t=1;
-                printf("c[%d]=%d\n", m, c[m]);}
+                }
             else
             {
                 c[m]=a[i];
                 t=0;
-                printf("c[%d]=%d\n", m, c[m]);
                 break;
             }
         }
@@ -29,7 +29,6 @@ int* aye(int a[],int b[], int n, int k)
             break;
         }
     }
-    printf("%d\n", m);
     if (t!=2)
         for(j=m-n+1; j<k; j++)
             c[j+n]=b[j];
@@ -63,3 +62,4 @@ int main()
         printf("%d ", c[i]);
     return 0;
 }
+
