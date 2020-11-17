@@ -42,6 +42,7 @@ int* aye(int a[],int b[], int n, int k)
 int main()
 {
     int n, k, i;
+    printf("vvedite kol-vo elemetov v massivah a b\n");
     scanf("%d%d", &n, &k);
     int* a;
     a = (int*) malloc(n*sizeof(int));
